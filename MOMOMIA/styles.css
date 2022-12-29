@@ -775,6 +775,10 @@ footer a {
   margin: auto 7px;
 }
 
+.userInfoDiv{
+  text-align: right;
+}
+
 .cartContentDiv {
   padding: 10px 0 10px 0;
 }

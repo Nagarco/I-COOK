@@ -120,6 +120,9 @@ li {
   padding: 10px;
 }
 
+.navOptions{
+  margin-right: 2%;
+}
 @media screen and (max-width: 992px) {
   .navbar-nav {
     background-color: #ffc107;

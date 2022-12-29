@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
   <head>
     <title>Contact Us</title>
     <link
@@ -47,71 +47,53 @@
     <!-- CSS -->
     <link href="https://copyfonts.com/fonts/attari-salees.html" />
     <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="./styles.css" />
+
   </head>
 
   <body>
     <!-- NAV BAR -->
-    <nav
-      class="navbar navbar-expand-lg navbar-light bg-light"
-      style="z-index: 11"
-    >
-      <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container ar-version">
         <!-- CODE FOR NAVIGATION BAR -->
+  
         <ul class="px-0 mx-0">
-          <img
-            src="./images/navbar-logo.gif"
-            style="height: 100px; width: 100px"
-            alt="navbar-logo"
-          />
+          <img src="./images/navbar-logo.gif" height="100px" width="100px" alt="navbar-logo" />
         </ul>
-        <a
-          class="navbar-brand"
-          href="index.html"
-          style="font-size: 56px; font-family: elinga"
-          >I-COOK</a
-        >
+        <a class="navbar-brand" href="index.html">I-COOK</a>
         <!--         <a style ="font-size :class="navbar-brand" href="#">MOMOMIA</a> -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  
+        <div class="collapse navbar-collapse navOptions" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link px-3" href="index.html"
-                >Home <span class="sr-only">(current)</span></a
-              >
+              <a class="nav-link px-3" href="#">الرئيسية <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link px-4" href="index.html#categorySection"
-                >Categories</a
-              >
+              <a class="nav-link px-4" href="#categorySection">الاقسام</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link px-4" href="index.html#healthySection"
-                >Hygiene</a
-              >
+              <a class="nav-link px-4" href="#healthySection">الصحة الغذائية</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link px-4" href="contactus.html">Contact Us</a>
+              <a class="nav-link px-4" href="contactus.html">تواصل معنا</a>
             </li>
           </ul>
         </div>
+        <span class="shoppingCart" data-toggle="modal" data-target="#exampleModal">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="shoppingCartAfter">0</span>
+        </span>
       </div>
     </nav>
+  
 
     <section class="contact">
       <div class="content">
-        <h2>Contact US</h2>
-        <p>We would love to hear from you!</p>
+        <h2>تواصل معنا</h2>
       </div>
       <div id="contactus-container" class="container">
         <div class="contactInfo">
@@ -120,9 +102,9 @@
               <i><img src="icons\maps.gif" alt="map-gif" /></i>
             </div>
             <div class="text">
-              <h3>Address</h3>
+              <h3>العنوان</h3>
               <p>
-                ICOOK Restaurant, <br />Sector 5 Market, <br />Dokki, GIZA
+                ICOOK Restaurant<br />ميدان المساحة <br />الدقي, الجيزة
               </p>
             </div>
           </div>
@@ -131,7 +113,7 @@
               <i class="icon1"><img src="icons\phone.gif" alt="phone-gif" /></i>
             </div>
             <div class="text">
-              <h3>Phone</h3>
+              <h3>الهاتف المحمول</h3>
               <p>500-100-XXXX</p>
             </div>
           </div>
@@ -140,29 +122,31 @@
               <i><img src="icons\email.gif" alt="email-gif" /></i>
             </div>
             <div class="text">
-              <h3>Email</h3>
+              <h3>البريد الالكتروني</h3>
               <p>ICOOK@gmail.com</p>
             </div>
           </div>
         </div>
         <div class="contactForm">
           <form action="">
-            <h2>Send Message</h2>
+            <div>
+            <h2>تواصل معنا</h2>
             <div class="inputBox">
               <input type="text" name="" required="required" />
-              <span>Full name</span>
+              <span>الاسم بالكامل</span>
             </div>
             <div class="inputBox">
               <input type="text" name="" required="required" />
-              <span>Email</span>
+              <span>البريد الالكتروني</span>
             </div>
             <div class="inputBox">
               <textarea required="required"></textarea>
-              <span>Type Your Message ...</span>
+              <span>اكتب رسالتك هنا ...</span>
             </div>
             <div class="inputBox">
               <input type="submit" name="" value="Send" />
             </div>
+          </div>
           </form>
         </div>
       </div>
@@ -202,10 +186,10 @@
 
         <div class="row contactRow">
           <p>
-            <a class="footer_clickable" href="./index.html">Home</a> |
-            <a class="footer_clickable" href="./policy.html">Policies</a> |
+            <a class="footer_clickable" href="./index.html">الرئيسية</a> |
+            <a class="footer_clickable" href="./policy.html">سياستنا</a> |
             <a class="footer_clickable" href="./terms_of_service.html"
-              >Terms of Service</a
+              >شروط الخدمة</a
             >
           </p>
         </div>
