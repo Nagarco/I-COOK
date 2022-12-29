@@ -1,2 +1,5 @@
 # I-COOK
-university project
+Web template for an online ordering restaurant.
+
+## Technologies
+HTML | CSS | JQUERY | 
